@@ -1,0 +1,133 @@
+webp<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickle Pizza</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v2">
+<link rel="manifest" href="/site.webmanifest?v2">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header id="Home">
+        <nav>
+            <div class="logo">
+                <img src="media/logo.webp" alt="pickle logo">
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Order">Order</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <!-- Home Page -->
+    <section>
+        <h1>OUR DELICACIES</h1>
+        <div class="auto-input"></div>
+        <div class="order"><a href="#Order">ORDER NOW</a></div>
+    </section>
+    <!-- Order Page-->
+    <section>
+        <h2 id="Order">SELECT ITEMS</h2>
+        <!-- Food Items -->
+        <div class="food-items">
+            <div class="item-des">
+                <img src="media/item1.webp" alt="Veg Pizza Photo">
+                <div class="item-name" >VEGGIE PIZZA</div>
+                <div class="item-cost">₹249</div>
+                <button class="item-buy" id="1" type="change">SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item2.webp" alt="Margherita Pizza Photo">
+                <div class="item-name">MARGHERITA PIZZA</div>
+                <div class="item-cost">₹399</div>
+                <button class="item-buy" id="2" type="change" >SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item3.webp" alt="Peri Peri Photo">
+                <div class="item-name">PERI PERI</div>
+                <div class="item-cost">₹359</div>
+                <button class="item-buy" id="3" type="change" >SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item4.webp" alt="Tandoori Pizza Photo">
+                <div class="item-name">TANDOORI PIZZA</div>
+                <div class="item-cost">₹449</div>
+                <button class="item-buy" id="4" type="change" >SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item5.webp" alt="Veg Cheese Pasta Photo">
+                <div class="item-name">VEG CHEESE PASTA</div>
+                <div class="item-cost">₹199</div>
+                <button class="item-buy" id="5" type="change" >SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item6.webp" alt="Mushroom Pasta Photo">
+                <div class="item-name">MUSHROOM PASTA</div>
+                <div class="item-cost">₹299</div>
+                <button class="item-buy" id="6" type="change" >SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item7.webp" alt="French Fries Photo">
+                <div class="item-name">FRENCH FRIES</div>
+                <div class="item-cost">₹110</div>
+                <button class="item-buy" id="7" type="change" >SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item8.webp" alt="Baked Momos Photo">
+                <div class="item-name">BAKED MOMOS</div>
+                <div class="item-cost">₹149</div>
+                <button class="item-buy" id="9" type="change" >SELECT</button>
+            </div>
+            <div class="item-des">
+                <img src="media/item9.webp" alt="Cold Drink Photo">
+                <div class="item-name">COLD DRINK</div>
+                <div class="item-cost">₹130</div>
+                <button class="item-buy" id="10" type="change" >SELECT</button>
+            </div>
+        </div>
+        <button id="order_placed" onclick="place_order()">PLACE ORDER</button>
+    </section>
+    <!-- About Page -->
+    <section>
+        <h2 id="About">ABOUT US</h2>
+        <div class="intro">
+            Welcome to Pickle, your go-to destination for delicious pizza delivery! We are a team of passionate food lovers who are dedicated to bringing you the tastiest, freshest, and most satisfying pizzas in town.
+
+At Pickle, we believe that pizza is more than just a dish – it's a way of life. That's why we're committed to using only the finest ingredients in our pizzas, from the freshest vegetables to the highest-quality meats and cheeses. Our dough is made fresh every day, and we take great care to ensure that each and every pizza we deliver is cooked to perfection.
+
+But we're not just about the pizza – we're also about the experience. We believe that ordering pizza should be easy, convenient, and hassle-free, which is why we offer a user-friendly online ordering system that makes it simple to order your favorite pizza from the comfort of your own home. And with our fast and reliable delivery service, you can rest assured that your pizza will be hot, fresh, and ready to enjoy in no time.
+
+Whether you're looking for a classic pepperoni pizza, a gourmet vegetarian pizza, or something a little more adventurous, we've got you covered. Our menu features a wide variety of pizzas, as well as salads, sides, and desserts to round out your meal.
+
+At Pickle, we're not just a pizza delivery company – we're a community of food lovers who are passionate about providing the best possible pizza experience to our customers. So whether you're ordering for yourself, your family, or a group of friends, you can count on us to deliver the best pizza around, every time.
+        </div>
+    </section>
+    <!-- Contact Page -->
+    <section>
+        <h2 id="Contact">CONTACT US</h2>
+        <div class="contact-form">
+            <form class="feedback-form" name="Contact-Form" action="https://script.google.com/macros/s/AKfycbzierrne4Q1G5zN7QJxaH8DcmnMf6QyY2MXbytOjE2AoxrehJ384hKoV30B5sU4ozG6/exec" method="post" onsubmit="submit_details()">
+                <label for="name">Name <input type="text" name="name" placeholder=" Enter your name" pattern="^[A-Za-z\s]+" required></label>
+                <label for="email">Email <input type="email" name="email" placeholder=" Enter your mail ID" pattern="[a-z0-9@.]+" required></label>
+                <label for="feeback">FeedBack & Queries <textarea rows="5" cols="20" name="feedback"></textarea></label>
+                <button class="sub_form" type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            &copy; <span>AASHIR - MUQEEM - FAROOQ</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="script.js" async defer></script> 
+</body>
+</html>
